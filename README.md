@@ -138,7 +138,7 @@ Here I used a [API](https://docs.mistral.ai/api) from mistralai, you can use oth
 
 ## Improvement
 
-I assumed the transcript (original text) is not the focus, so it is just a huge chunk of text and hard to read. It may require some formatting. Also, AI transcribe is not prefect, for gradio interface, please set it to be ```interactive=True``` to allow modification (human-in-the-loop).
+I assumed the transcript (original text) is not the focus, so it is just a huge chunk of text and hard to read. It may require some formatting. Also, AI transcribe is not prefect (whisper constantly make mistakes on Japanese songs claiming it is created by Hatsune Miku, and it cannot a single audio with multiple languages.), for gradio interface, please set it to be ```interactive=True``` to allow modification (human-in-the-loop).
 
 Indeed, there is an all-in-one-model to complete this task, Voxtral-Mini-3B from mistralai. It can also auto-detect audio language and perform Q&A and summarization. However, it can only process up to 30 minutes for transcription and support limited languages (mostly European languages, but nearly no Asian languages). For details, please visit their [page](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507).
 
