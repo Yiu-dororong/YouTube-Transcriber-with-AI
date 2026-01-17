@@ -4,7 +4,14 @@ This project is for self use only, may not be suitable for scalable production e
 
 Although there are already many tools or APIs to extract transcripts instantly, the painpoint is that they only works for videos with bulit-in captions. In other words, if the video does not come with bulit-in captions, those tools will fail to work.
 
-*Disclaimer: The project is for educational purpose only. Downloading YouTube videos may violate YouTube ToS or laws. I do not encourage any illegal actions.*
+*Disclaimer: This project is for educational and research purposes only.*
+
+*Usage Policy:
+This tool should only be used to download content that you own, or content that is explicitly licensed under Creative Commons or in the Public Domain.
+The developer does not condone or encourage the downloading of copyrighted material in violation of YouTube's Terms of Service.
+Users are solely responsible for any misuse of this software and for complying with their local copyright laws.*
+
+*The developer of this project is not affiliated with YouTube or Google LLC. Use this software at your own risk.*
 
 # Idea
 
@@ -65,7 +72,7 @@ yt = YouTube(url)
 yt.captions.keys()
 ```
 
-Note: ```pytubefix``` and ```yt_dlp``` can perform the whole task in theory. You may choose one of them to complete. However, it turns out it does not work for me, so I have to use both of them to compensate each other.
+Note: ```pytubefix``` and ```yt_dlp``` can perform the whole task in theory. You may choose one of them to complete. Besides, using YouTube Premium is a much safer way to download.
 
 We can check what languages of subtitles dooes the video have, if it has. For example, one may have different versions of English, US, UK or even auto-generated.
 
@@ -134,7 +141,7 @@ with Mistral(
     return res.choices[0].message.content
 ```
 
-Here I used a [API](https://docs.mistral.ai/api) from mistralai, you can use other LLM or even run on local as if the example of whisper shown above via huggingface.
+Here I used a [API](https://docs.mistral.ai/api) from mistralai, you can use other LLM or even run on local as if the example of whisper shown above via huggingface. This API may not be the best choice as it may add context out of the transcript.
 
 ## Improvement
 
