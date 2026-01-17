@@ -72,7 +72,7 @@ yt = YouTube(url)
 yt.captions.keys()
 ```
 
-Note: ```pytubefix``` and ```yt_dlp``` can perform the whole task in theory. You may choose one of them to complete. Besides, using YouTube Premium is a much safer way to download.
+Note: ```pytubefix``` and ```yt_dlp``` can perform the whole task in theory. You may choose one of them to complete. Besides, using YouTube Premium is a much safer way to download, and you may need to add a ```gr.File``` to ingest it and connect to the posterior process.
 
 We can check what languages of subtitles dooes the video have, if it has. For example, one may have different versions of English, US, UK or even auto-generated.
 
