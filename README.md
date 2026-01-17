@@ -80,7 +80,7 @@ We can check what languages of subtitles dooes the video have, if it has. For ex
 
 After choosing the transcript languages, the transcript can be extracted by ```yt.captions[caption_language]```.
 
-If you have a valid audio to transcribe, whisper model from openai maybe a good choice, as it support multiple languages (including Asian languages even for Cantonese) and lightweight with high accuracy.
+If you have a valid audio to transcribe, whisper model from openai maybe a good choice, as it support multiple languages (including Asian languages even for Cantonese) and lightweight with high accuracy, but its API is not free.
 
 From their official examples, we can modified it to align with our task,
 
@@ -141,7 +141,7 @@ with Mistral(
     return res.choices[0].message.content
 ```
 
-Here I used a [API](https://docs.mistral.ai/api) from mistralai, you can use other LLM or even run on local as if the example of whisper shown above via huggingface. This API may not be the best choice as it may add context out of the transcript.
+Here I used a [API](https://docs.mistral.ai/api) from mistralai which is pretty fast, you can use other LLM or even run on local as if the example of whisper shown above via huggingface. Yet, this API may not be the best choice as it may add context out of the transcript.
 
 ## Improvement
 
